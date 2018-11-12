@@ -10,7 +10,7 @@ ReactDom.render(
 // {
 //     tagName:'h1',
 //     attr:null,
-//     chaildren:['hello']
+//     children:['hello']
 // }
 // React.render(
 //     React.createElement('h1',null,['helol'])
