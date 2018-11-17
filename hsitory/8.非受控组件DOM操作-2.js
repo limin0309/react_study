@@ -10,7 +10,7 @@ class Sum extends Component{
     }
     render(){
         return(
-            // ref等于一个函数，表示当函数被挂载到页面中之后，会立即调用
+            // ref等于一个函数，表示当元素被挂载到页面中之后，会立即调用
             // 此函数，并传入渲染后的DOM元素
             <div onChange={this.handleChange}>
                 <input type="text" ref={ref=>this.a=ref} />+
