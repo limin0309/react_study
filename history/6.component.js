@@ -10,6 +10,9 @@ import ReactDOM,{render} from 'react-dom';
  render(<Message msg="hello" id="5"/>,window.app);
  * {msg: "hello", id: "5"}
  *
+ * 
+ * 
+ * 
  * 2.组件的首字母必须是大写的
  * 3.组件定义完后可以像React元素一样使用
  *
@@ -20,6 +23,14 @@ import ReactDOM,{render} from 'react-dom';
  **/
 
 // 注意 此处的Message需要解构
+
+// let str='msg="hello" id="5"'
+// let queryString=require('queryString');
+// let obj =queryString.parse(str,'','=');
+// console.log(obj);// {msg:'hello',id:'5'}
+
+
+
 let Message =(props)=>{
     return <h1 style={props.style}>{props.msg}</h1>
 }
